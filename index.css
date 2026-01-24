@@ -1,0 +1,244 @@
+.gallery-img {
+  width: 100%;
+  height: 200px;        
+  object-fit: cover;   
+}
+
+
+.main{
+
+
+      background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("img/Cadet\ William\ Final.png");
+
+}
+
+
+
+
+    /* ===========================
+       HERO SECTION
+       =========================== */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* full screen */
+      background-image: url("img/Background\ actual\ final.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Dark overlay */
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+
+    /* Content on top */
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    /* Barber chair GIF */
+    .hero-gif {
+
+      width: 80%;
+    
+    }
+
+ 
+
+    /* Navbar styling */
+    .navbar .nav-link,
+    .navbar-brand {
+      color: #fff !important;
+    }
+
+    /* ===========================
+       GALLERY IMAGES
+       =========================== */
+    .gallery-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* ===========================
+       HERO BUTTON / TEXT OPTIONAL
+       =========================== */
+    .hero-content h1 {
+      margin-top: 20px;
+      font-size: 2rem;
+    }
+
+
+
+/* ===========================
+   MODERN POLISHED COLOR THEME
+   =========================== */
+:root {
+  --primary-color: #0d1117; /* deep almost black background */
+  --secondary-color: #ff4c60; /* vibrant accent, modern neon pink */
+  --accent-color: #1f6feb; /* subtle blue accent */
+  --text-color: #e4e6eb; /* soft white text */
+  --text-muted: #8b8f96; /* lighter gray for secondary text */
+  --overlay-color: rgba(13, 17, 23, 0.6); /* semi-transparent dark overlay */
+}
+
+/* ===========================
+   BODY & CONTAINERS
+   =========================== */
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  color: var(--text-color);
+}
+
+/* ===========================
+   HERO SECTION
+   =========================== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+
+.hero-overlay {
+  background: var(--overlay-color);
+  transition: background 0.3s ease;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--text-color);
+  padding: 0 1rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.hero-content p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  max-width: 600px;
+  color: var(--text-muted);
+}
+
+.hero-gif {
+  width: 100%;
+
+
+}
+
+/* ===========================
+   NAVBAR
+   =========================== */
+.navbar {
+  background: transparent !important;
+  padding: 1rem 0;
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(13, 17, 23, 0.9);
+  padding: 0.5rem 0;
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--secondary-color) !important;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.navbar .nav-link {
+  color: var(--text-color) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--accent-color) !important;
+}
+
+/* ===========================
+   GALLERY
+   =========================== */
+.gallery-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(31, 111, 235, 0.4);
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+  background-color: #0d1117;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ===========================
+   BUTTONS
+   =========================== */
+.btn-primary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff6078;
+  border-color: #ff6078;
+  color: #fff;
+}
