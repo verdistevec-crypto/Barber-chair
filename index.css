@@ -91,7 +91,7 @@
 :root {
   --primary-color: #0d1117; /* deep almost black background */
   --secondary-color: #ff4c60; /* vibrant accent, modern neon pink */
-  --accent-color: #1f6feb; /* subtle blue accent */
+  --accent-color: #ffffff; /* Changed to red for consistency - HK */
   --text-color: #e4e6eb; /* soft white text */
   --text-muted: #8b8f96; /* lighter gray for secondary text */
   --overlay-color: rgba(13, 17, 23, 0.6); /* semi-transparent dark overlay */
@@ -242,5 +242,6 @@ footer p {
   border-color: #ff6078;
   color: #fff;
 }
+
 
 
